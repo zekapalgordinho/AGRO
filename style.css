@@ -322,3 +322,144 @@ footer {
   text-align: center;
 }
 
+.contato-hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #f1f8e9;
+  padding: 3rem 1rem;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.contato-img {
+  flex: 1 1 400px;
+  max-width: 450px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(141, 198, 63, 0.3);
+  object-fit: cover;
+}
+
+.contato-texto {
+  flex: 1 1 400px;
+  max-width: 650px;
+  color: #558b2f;
+}
+
+.contato-texto h2 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.contato-texto p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* Formulário */
+
+.form-contato {
+  max-width: 700px;
+  margin: 3rem auto 5rem;
+  background-color: #e6f2d9;
+  padding: 2.5rem 3rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(120, 180, 50, 0.15);
+  animation: fadeIn 1.3s ease forwards;
+}
+
+.form-contato h2 {
+  text-align: center;
+  color: #33691e;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.formulario label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #33691e;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 0.9rem 1.2rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid #a5d6a7;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  transition: border-color 0.3s ease;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+  outline: none;
+  border-color: #558b2f;
+  box-shadow: 0 0 8px #9ccc65;
+}
+
+.btn-animado {
+  background: linear-gradient(45deg, #7cb342, #c0ca33);
+  border: none;
+  padding: 1rem 2.5rem;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background 0.4s ease, transform 0.3s ease;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 6px 15px rgba(124, 179, 66, 0.6);
+}
+
+.btn-animado:hover {
+  background: linear-gradient(45deg, #a4c639, #7cb342);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(124, 179, 66, 0.9);
+}
+
+/* Animações */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsividade */
+
+@media (max-width: 700px) {
+  .contato-hero {
+    flex-direction: column;
+  }
+
+  .contato-img,
+  .contato-texto {
+    max-width: 100%;
+  }
+
+  .form-contato {
+    padding: 2rem 1.5rem;
+  }
+}
+
