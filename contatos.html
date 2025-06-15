@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contato</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header class="hero-header">
@@ -17,9 +20,14 @@
       </ul>
     </nav>
   </header>
+
   <main>
     <section class="hero contato-hero">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Milho_colhido.jpg/640px-Milho_colhido.jpg" alt="Colheita de milho" class="hero-image">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Milho_colhido.jpg/640px-Milho_colhido.jpg"
+        alt="Colheita de milho"
+        class="hero-image"
+      />
       <div class="hero-text">
         <h2>Estamos aqui para ouvir você</h2>
         <p>Quer saber mais sobre o projeto ou propor parcerias? Mande sua mensagem!</p>
@@ -40,9 +48,15 @@
           <input type="text" id="assunto" name="assunto" placeholder="Dúvida, sugestão, etc." required />
 
           <label for="mensagem">Mensagem:</label>
-          <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem aqui..." required></textarea>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            rows="6"
+            placeholder="Escreva sua mensagem aqui..."
+            required
+          ></textarea>
 
-          <button type="submit">Enviar Mensagem</button>
+          <button type="submit" class="btn-animado">Enviar Mensagem</button>
         </form>
       </div>
     </section>
