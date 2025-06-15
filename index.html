@@ -2,73 +2,80 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ciclo do Milho: Campo e Cidade</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ciclo do Milho - Início</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header class="hero-header">
-    <h1>Ciclo do Milho: A Conexão entre Campo e Cidade</h1>
+    <h1>Ciclo do Milho: A Importância do Campo para a Cidade</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Início</a></li>
+        <li><a href="index.html" class="ativo">Início</a></li>
         <li><a href="sobre.html">Sobre</a></li>
         <li><a href="contatos.html">Contato</a></li>
       </ul>
     </nav>
   </header>
+
   <main>
     <section class="hero">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Milho_verde.jpg/640px-Milho_verde.jpg" alt="Milho verde" class="hero-image">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Corn_field_in_Texas_2015_008.jpg/640px-Corn_field_in_Texas_2015_008.jpg"
+        alt="Plantação de milho"
+        class="hero-image"
+      />
       <div class="hero-text">
-        <h2>Do campo à mesa: o caminho do milho</h2>
-        <p>Entenda como o cultivo do milho no campo influencia diretamente a vida nas cidades.</p>
+        <h2>Do Campo à Mesa: Entenda o Ciclo do Milho</h2>
+        <p>
+          O milho é um alimento essencial para o Brasil e o mundo, conectando o meio rural à vida urbana. Neste site,
+          vamos explorar o ciclo produtivo do milho e mostrar como o campo abastece a cidade, garantindo alimentação,
+          economia e sustentabilidade.
+        </p>
+        <a href="sobre.html" class="btn-animado">Saiba Mais</a>
       </div>
     </section>
 
-    <section class="conteudo">
-      <div class="bloco">
-        <h3>Importância do Campo</h3>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Colheita_milho.jpg/640px-Colheita_milho.jpg" alt="Colheita de milho">
-        <p>O campo é o berço da produção agrícola. No caso do milho, desde a semeadura até a colheita, o trabalho no campo movimenta a economia rural, gera empregos e produz um dos grãos mais versáteis da alimentação e da indústria.</p>
-      </div>
-      <div class="bloco">
-        <h3>Impacto na Cidade</h3>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Produtos_milho.jpg/640px-Produtos_milho.jpg" alt="Produtos derivados do milho">
-        <p>O milho é matéria-prima para inúmeros produtos encontrados nas cidades: alimentos industrializados, ração animal, biocombustíveis e até produtos farmacêuticos. O ciclo do milho conecta produtores rurais, indústrias e consumidores urbanos.</p>
-      </div>
-    </section>
-
-    <section class="linha-do-tempo">
+    <section class="linha-do-tempo-container">
       <h2>Linha do Tempo do Ciclo do Milho</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-date">1. Preparo do Solo</div>
-          <div class="timeline-content">O solo é arado e fertilizado para receber as sementes.</div>
+      <div class="linha-do-tempo">
+        <div class="evento" style="--delay: 0.1s;">
+          <div class="circle"></div>
+          <div class="content">
+            <h3>Plantio</h3>
+            <p>O solo é preparado e as sementes de milho são plantadas, iniciando o ciclo.</p>
+          </div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-date">2. Semeadura</div>
-          <div class="timeline-content">As sementes de milho são plantadas cuidadosamente.</div>
+        <div class="evento" style="--delay: 0.3s;">
+          <div class="circle"></div>
+          <div class="content">
+            <h3>Crescimento</h3>
+            <p>O milho cresce com irrigação e cuidados para garantir qualidade e produtividade.</p>
+          </div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-date">3. Crescimento</div>
-          <div class="timeline-content">As plantas se desenvolvem, exigindo irrigação e controle de pragas.</div>
+        <div class="evento" style="--delay: 0.5s;">
+          <div class="circle"></div>
+          <div class="content">
+            <h3>Colheita</h3>
+            <p>O milho é colhido e preparado para o transporte às cidades.</p>
+          </div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-date">4. Colheita</div>
-          <div class="timeline-content">O milho é colhido com máquinas especializadas.</div>
+        <div class="evento" style="--delay: 0.7s;">
+          <div class="circle"></div>
+          <div class="content">
+            <h3>Processamento</h3>
+            <p>O milho passa por processamento para virar alimentos e produtos derivados.</p>
+          </div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-date">5. Processamento</div>
-          <div class="timeline-content">O milho colhido é limpo, armazenado e processado para diferentes usos.</div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-date">6. Distribuição</div>
-          <div class="timeline-content">O milho e seus derivados são transportados para cidades e centros industriais.</div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-date">7. Consumo</div>
-          <div class="timeline-content">Chega às casas, supermercados e fábricas da cidade.</div>
+        <div class="evento" style="--delay: 0.9s;">
+          <div class="circle"></div>
+          <div class="content">
+            <h3>Consumo</h3>
+            <p>O milho chega às mesas nas cidades, sendo ingrediente fundamental na alimentação.</p>
+          </div>
         </div>
       </div>
     </section>
