@@ -142,3 +142,38 @@ footer {
   color: #9e9d24;
   font-weight: bold;
 }
+
+.contato-hero {
+  background-color: #fffde7;
+}
+
+.hero-image {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.form-container {
+  background-color: #fafafa;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 1.5rem;
+}
+
+input, textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+label {
+  font-weight: bold;
+  color: #555;
+}
