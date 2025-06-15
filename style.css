@@ -157,3 +157,24 @@ footer {
   color: #9e9d24;
   font-weight: bold;
 }
+
+.linha-do-tempo {
+  margin-top: 4rem;
+  padding: 2rem;
+  background-color: #f0f4c3;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+ding-left: 1.5rem;
+  list-style: none;
+}
+
+.custom-list li::before {
+  content: "🌽 ";
+  color: #9e9d }
+.timeline {
+  position: relative;
+  margin: 2rem 0;
+  padding-left: 2rem;
+  border-left: 4px solid #cddc39;
+  font-weight: bold;
+}
